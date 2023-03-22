@@ -36,3 +36,99 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navigation{
+  display: flex;
+  height: 50px;
+  background-color: red;
+  padding: 0 40px;
+}
+.navigation>div{
+  display: flex;
+  align-items:center;
+  height: 100%;
+  color: white;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.3s ease-out;
+
+}
+
+.navigation>div:hover{
+  background-color:white;
+  color: red;
+
+}
+
+
+.navigation>div.selected{
+  color: red;
+  background-color: white;
+}
+
+.typesList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 20px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.typeItem{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  padding: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+
+}
+
+.homeContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.homeContainer>div{
+  background-color:red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  border-radius: 5%;
+}
+.homeContainer>div>form{
+   margin : 10px;
+
+ }
+.homeContainer>div>h3{
+  margin : 15px;
+}
+.homeContainer>div>form>div{
+  margin-bottom: 20px;
+}
+.homeContainer>div>form>div>input[type="text"]{
+  border-radius: 5px;
+  border: 0;
+
+}
+
+.homeContainer>div>form>button{
+  padding:5px;
+  border: 0;
+  border-radius: 5px;
+
+  background-color:white;
+  font-size: 12px;
+  font-weight: 500;
+  color: red;
+}
